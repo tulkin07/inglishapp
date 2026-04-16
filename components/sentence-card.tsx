@@ -34,9 +34,10 @@ export function SentenceCard({
     const parsed = Number.parseInt(raw, 10);
     if (!Number.isNaN(parsed)) {
       setRepeatCount(parsed);
+      // Notify parent once on mount for persisted value
       onMemorizationChange?.(parsed);
     }
-  }, [storageKey, onMemorizationChange]);
+  }, [storageKey]);
 
   useEffect(() => {
     if (!recognizedText) {
