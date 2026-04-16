@@ -38,14 +38,14 @@ export default function Home() {
 
   return (
     <div className="flex flex-1 flex-col gap-5 py-4">
-      <section className="rounded-3xl border border-slate-800 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-950 p-5 sm:p-6 shadow-sm">
-        <p className="text-xs uppercase tracking-[0.18em] text-slate-400">
+      <section className="rounded-3xl border border-slate-800 bg-background/80 p-5 sm:p-6 shadow-sm">
+        <p className="text-xs uppercase tracking-[0.18em] text-slate-500">
           Your 30 day journey
         </p>
-        <h2 className="mt-1 text-2xl font-semibold text-slate-50 sm:text-3xl">
+        <h2 className="mt-1 text-2xl font-semibold sm:text-3xl">
           Train your speaking muscle every day.
         </h2>
-        <p className="mt-2 text-sm text-slate-300">
+        <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">
           Follow the daily plan, shadow sentences, and get instant feedback on
           your pronunciation and fluency.
         </p>
@@ -54,14 +54,14 @@ export default function Home() {
             currentDay={summary.completedDays}
             totalDays={totalDays}
           />
-          <div className="flex flex-wrap items-center gap-3 text-xs text-slate-300">
-            <span className="rounded-full border border-slate-700 bg-slate-900 px-3 py-1">
+          <div className="flex flex-wrap items-center gap-3 text-xs text-slate-500 dark:text-slate-300">
+            <span className="rounded-full border border-slate-300/70 bg-background px-3 py-1 dark:border-slate-700 dark:bg-slate-900">
               Streak:{" "}
               <span className="font-semibold text-emerald-400">
                 {summary.streak} days
               </span>
             </span>
-            <span className="rounded-full border border-slate-700 bg-slate-900 px-3 py-1">
+            <span className="rounded-full border border-slate-300/70 bg-background px-3 py-1 dark:border-slate-700 dark:bg-slate-900">
               Current focus:{" "}
               <span className="font-semibold text-sky-400">
                 Day {currentDayData?.day}: {currentDayData?.title}
@@ -77,7 +77,7 @@ export default function Home() {
             </Link>
             <Link
               href="/practice/1"
-              className="inline-flex h-11 items-center justify-center rounded-full border border-slate-700 bg-slate-900 px-5 text-xs font-medium text-slate-100 hover:border-slate-500 hover:bg-slate-800"
+              className="inline-flex h-11 items-center justify-center rounded-full border border-slate-300 bg-background px-5 text-xs font-medium text-slate-800 hover:border-slate-400 hover:bg-slate-100 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:border-slate-500 dark:hover:bg-slate-800"
             >
               View plan from day 1
             </Link>
@@ -86,20 +86,20 @@ export default function Home() {
       </section>
 
       <section className="grid gap-4 sm:grid-cols-2">
-        <div className="rounded-2xl border border-slate-800 bg-slate-950/70 p-4">
-          <h3 className="text-sm font-semibold text-slate-50">
+        <div className="rounded-2xl border border-slate-200 bg-background p-4 dark:border-slate-800 dark:bg-slate-950/70">
+          <h3 className="text-sm font-semibold">
             Speaking modes
           </h3>
-          <p className="mt-1 text-xs text-slate-300">
+          <p className="mt-1 text-xs text-slate-600 dark:text-slate-300">
             Switch between shadowing, free speaking, questions, and storytelling
             depending on the day&apos;s focus.
           </p>
         </div>
-        <div className="rounded-2xl border border-slate-800 bg-slate-950/70 p-4">
-          <h3 className="text-sm font-semibold text-slate-50">
+        <div className="rounded-2xl border border-slate-200 bg-background p-4 dark:border-slate-800 dark:bg-slate-950/70">
+          <h3 className="text-sm font-semibold">
             Easy memorization
           </h3>
-          <p className="mt-1 text-xs text-slate-300">
+          <p className="mt-1 text-xs text-slate-600 dark:text-slate-300">
             Repeat key sentences up to 10 times, track which ones you have
             mastered, and reuse them in new contexts.
           </p>

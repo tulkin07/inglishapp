@@ -2,6 +2,11 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 
+// Minimal typings for browser speech recognition so TypeScript can compile
+type BrowserSpeechRecognition = any;
+type BrowserSpeechRecognitionEvent = any;
+type BrowserSpeechRecognitionErrorEvent = any;
+
 type Status = "idle" | "listening" | "unsupported" | "error";
 
 export interface UseSpeechRecognitionOptions {
@@ -26,7 +31,7 @@ export function useSpeechRecognition(
   const [status, setStatus] = useState<Status>("idle");
   const [transcript, setTranscript] = useState("");
   const [error, setError] = useState<string | null>(null);
-  const recognitionRef = useRef<SpeechRecognition | null>(null);
+  const recognitionRef = useRef<BrowserSpeechRecognition | null>(null);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -39,7 +44,7 @@ export function useSpeechRecognition(
       return;
     }
 
-    const recognition: SpeechRecognition = new SpeechRecognitionCtor();
+    const recognition: BrowserSpeechRecognition = new SpeechRecognitionCtor();
     recognition.lang = lang;
     recognition.continuous = continuous;
     recognition.interimResults = true;
@@ -49,7 +54,7 @@ export function useSpeechRecognition(
       setError(null);
     };
 
-    recognition.onresult = (event: SpeechRecognitionEvent) => {
+    recognition.onresult = (event: BrowserSpeechRecognitionEvent) => {
       let text = "";
       for (let i = event.resultIndex; i < event.results.length; i += 1) {
         text += event.results[i][0].transcript;
@@ -57,7 +62,7 @@ export function useSpeechRecognition(
       setTranscript(text.trim());
     };
 
-    recognition.onerror = (event: SpeechRecognitionErrorEvent) => {
+    recognition.onerror = (event: BrowserSpeechRecognitionErrorEvent) => {
       setStatus("error");
       setError(event.error || "Speech recognition error");
     };

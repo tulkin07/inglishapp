@@ -35,7 +35,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col transition-colors duration-200">
         <div className="flex-1 flex flex-col">
-          <header className="border-b border-slate-800/60 bg-slate-950/80 backdrop-blur">
+          <header className="border-b border-slate-800/40 bg-background/80 backdrop-blur">
             <div className="mx-auto flex max-w-3xl items-center justify-between px-4 py-3">
               <div className="flex flex-col">
                 <span className="text-xs uppercase tracking-[0.2em] text-slate-400">
