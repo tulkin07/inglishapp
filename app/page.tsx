@@ -1,65 +1,110 @@
-import Image from "next/image";
+import Link from "next/link";
+import plan from "@/data/30days.json";
+import { ProgressBar } from "@/components/progress-bar";
+
+type Day = (typeof plan)[number];
+
+function getLocalProgress(totalDays: number) {
+  if (typeof window === "undefined") {
+    return { completedDays: 0, streak: 0, currentDay: 1 };
+  }
+  const raw = window.localStorage.getItem("speakingTrainer:completedDays");
+  const completed = raw ? (JSON.parse(raw) as number[]) : [];
+  const completedDays = completed.length;
+  const currentDay =
+    completedDays >= totalDays ? totalDays : Math.min(completedDays + 1, totalDays);
+
+  const streakRaw = window.localStorage.getItem("speakingTrainer:streak");
+  const streak = streakRaw ? Number.parseInt(streakRaw, 10) || 0 : 0;
+
+  return { completedDays, streak, currentDay };
+}
 
 export default function Home() {
+  const totalDays = plan.length;
+  let summary: { completedDays: number; streak: number; currentDay: number } = {
+    completedDays: 0,
+    streak: 0,
+    currentDay: 1,
+  };
+
+  if (typeof window !== "undefined") {
+    summary = getLocalProgress(totalDays);
+  }
+
+  const currentDayData: Day | undefined = plan.find(
+    (d) => d.day === summary.currentDay,
+  );
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+    <div className="flex flex-1 flex-col gap-5 py-4">
+      <section className="rounded-3xl border border-slate-800 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-950 p-5 sm:p-6 shadow-sm">
+        <p className="text-xs uppercase tracking-[0.18em] text-slate-400">
+          Your 30 day journey
+        </p>
+        <h2 className="mt-1 text-2xl font-semibold text-slate-50 sm:text-3xl">
+          Train your speaking muscle every day.
+        </h2>
+        <p className="mt-2 text-sm text-slate-300">
+          Follow the daily plan, shadow sentences, and get instant feedback on
+          your pronunciation and fluency.
+        </p>
+        <div className="mt-4 space-y-4">
+          <ProgressBar
+            currentDay={summary.completedDays}
+            totalDays={totalDays}
+          />
+          <div className="flex flex-wrap items-center gap-3 text-xs text-slate-300">
+            <span className="rounded-full border border-slate-700 bg-slate-900 px-3 py-1">
+              Streak:{" "}
+              <span className="font-semibold text-emerald-400">
+                {summary.streak} days
+              </span>
+            </span>
+            <span className="rounded-full border border-slate-700 bg-slate-900 px-3 py-1">
+              Current focus:{" "}
+              <span className="font-semibold text-sky-400">
+                Day {currentDayData?.day}: {currentDayData?.title}
+              </span>
+            </span>
+          </div>
+          <div className="mt-2 flex flex-wrap items-center gap-3">
+            <Link
+              href={`/practice/${summary.currentDay}`}
+              className="inline-flex h-11 items-center justify-center rounded-full bg-emerald-500 px-6 text-sm font-semibold text-emerald-950 shadow-sm hover:bg-emerald-400 active:scale-[0.97]"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              Start today&apos;s practice
+            </Link>
+            <Link
+              href="/practice/1"
+              className="inline-flex h-11 items-center justify-center rounded-full border border-slate-700 bg-slate-900 px-5 text-xs font-medium text-slate-100 hover:border-slate-500 hover:bg-slate-800"
             >
-              Learning
-            </a>{" "}
-            center.
+              View plan from day 1
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="grid gap-4 sm:grid-cols-2">
+        <div className="rounded-2xl border border-slate-800 bg-slate-950/70 p-4">
+          <h3 className="text-sm font-semibold text-slate-50">
+            Speaking modes
+          </h3>
+          <p className="mt-1 text-xs text-slate-300">
+            Switch between shadowing, free speaking, questions, and storytelling
+            depending on the day&apos;s focus.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+        <div className="rounded-2xl border border-slate-800 bg-slate-950/70 p-4">
+          <h3 className="text-sm font-semibold text-slate-50">
+            Easy memorization
+          </h3>
+          <p className="mt-1 text-xs text-slate-300">
+            Repeat key sentences up to 10 times, track which ones you have
+            mastered, and reuse them in new contexts.
+          </p>
         </div>
-      </main>
+      </section>
     </div>
   );
 }

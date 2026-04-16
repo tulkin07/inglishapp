@@ -1,0 +1,393 @@
+[
+  {
+    "day": 1,
+    "title": "Myself",
+    "sentences": [
+      "My name is Alex.",
+      "I am an English learner.",
+      "I live in my hometown.",
+      "I want to speak English confidently.",
+      "I am starting my 30 day speaking journey."
+    ],
+    "speakingTask": "Introduce yourself for 2 minutes. Talk about your name, where you live, what you do, and why you are learning English.",
+    "practiceType": "speaking"
+  },
+  {
+    "day": 2,
+    "title": "Daily Routine",
+    "sentences": [
+      "I wake up at seven in the morning.",
+      "I brush my teeth and wash my face.",
+      "I have breakfast with my family.",
+      "I start my work or study after breakfast.",
+      "I relax in the evening and go to bed before midnight."
+    ],
+    "speakingTask": "Describe your daily routine from morning to night for 2 minutes.",
+    "practiceType": "shadowing"
+  },
+  {
+    "day": 3,
+    "title": "My Work or Study",
+    "sentences": [
+      "I work or study from Monday to Friday.",
+      "I use English in some parts of my work or study.",
+      "I talk with colleagues, classmates, or teachers during the day.",
+      "I try to stay organized and focused on my tasks.",
+      "I want to improve my communication skills for my career."
+    ],
+    "speakingTask": "Talk about your work or studies, your tasks, and why English is important for you.",
+    "practiceType": "speaking"
+  },
+  {
+    "day": 4,
+    "title": "Feelings and Emotions",
+    "sentences": [
+      "Today I feel motivated to practice English.",
+      "Sometimes I feel nervous when I speak in front of others.",
+      "I feel proud when I finish a speaking task.",
+      "I feel relaxed when I practice in a quiet place.",
+      "I want to feel confident every time I speak English."
+    ],
+    "speakingTask": "Explain how you feel about speaking English and what makes you feel confident or nervous.",
+    "practiceType": "questions"
+  },
+  {
+    "day": 5,
+    "title": "Time and Schedule",
+    "sentences": [
+      "I plan my English practice at a fixed time every day.",
+      "I spend at least fifteen minutes speaking in English.",
+      "I balance my study, work, and rest during the day.",
+      "I know that small daily practice creates big results.",
+      "I am making English practice a part of my schedule."
+    ],
+    "speakingTask": "Talk about your weekly schedule and when you can practice speaking English.",
+    "practiceType": "shadowing"
+  },
+  {
+    "day": 6,
+    "title": "Past Experiences",
+    "sentences": [
+      "I started learning English a long time ago.",
+      "I have tried different ways to improve my English.",
+      "Sometimes I stopped practicing and lost confidence.",
+      "I remember a time when I spoke English very well.",
+      "I am ready to learn from my past and move forward."
+    ],
+    "speakingTask": "Share a past experience with English. Talk about a time you were proud or disappointed.",
+    "practiceType": "speaking"
+  },
+  {
+    "day": 7,
+    "title": "Future Plans",
+    "sentences": [
+      "I want to speak English fluently in the future.",
+      "I plan to use English for travel or work abroad.",
+      "I will keep practicing even after these 30 days.",
+      "I will look for opportunities to speak with real people.",
+      "I believe my future with English will be bright."
+    ],
+    "speakingTask": "Describe your future plans with English and how speaking skills will help you.",
+    "practiceType": "story"
+  },
+  {
+    "day": 8,
+    "title": "Questions and Answers",
+    "sentences": [
+      "What do you do in your free time?",
+      "How often do you practice English speaking?",
+      "Why do you want to improve your speaking skills?",
+      "Who inspires you to learn English?",
+      "Where do you usually study or practice English?"
+    ],
+    "speakingTask": "Answer these questions in detail, as if you are in an interview.",
+    "practiceType": "questions"
+  },
+  {
+    "day": 9,
+    "title": "Combination Practice",
+    "sentences": [
+      "I can talk about myself, my routine, and my work.",
+      "I can describe my feelings and plans in English.",
+      "I can answer simple questions about my life.",
+      "I notice that daily speaking practice helps my confidence.",
+      "I am ready to combine everything I learned so far."
+    ],
+    "speakingTask": "Give a 3 minute talk that combines who you are, what you do, and your plans with English.",
+    "practiceType": "speaking"
+  },
+  {
+    "day": 10,
+    "title": "First Review",
+    "sentences": [
+      "I have practiced speaking for ten days.",
+      "I can already feel some improvement in my speaking.",
+      "I know my common mistakes and weak points.",
+      "I understand that consistency is more important than perfection.",
+      "I am ready to continue to the next level."
+    ],
+    "speakingTask": "Review the first ten days. Talk about what you improved and what you still want to improve.",
+    "practiceType": "shadowing"
+  },
+  {
+    "day": 11,
+    "title": "Job Details",
+    "sentences": [
+      "I can clearly describe my main responsibilities at work or school.",
+      "I work with different people and need to communicate clearly.",
+      "I sometimes need to explain my ideas in English.",
+      "I want to sound professional when I talk about my job.",
+      "I am learning useful phrases to talk about my work in detail."
+    ],
+    "speakingTask": "Describe your job or studies in detail, including your tasks, tools, and the people you work with.",
+    "practiceType": "speaking"
+  },
+  {
+    "day": 12,
+    "title": "Problems and Solutions",
+    "sentences": [
+      "I sometimes face problems during my day.",
+      "I try to stay calm and think about solutions.",
+      "I can explain what went wrong in simple English.",
+      "I can suggest at least one possible solution.",
+      "I know that explaining problems clearly is a useful skill."
+    ],
+    "speakingTask": "Talk about a problem you had recently and explain how you solved it or what you learned.",
+    "practiceType": "questions"
+  },
+  {
+    "day": 13,
+    "title": "Learning and Growth",
+    "sentences": [
+      "I am always trying to learn something new.",
+      "I learn from books, videos, and real life situations.",
+      "I make mistakes, but I use them to grow.",
+      "I know that language learning is a long journey.",
+      "I am proud of every small step I make in English."
+    ],
+    "speakingTask": "Explain how you like to learn new things and how you are learning English right now.",
+    "practiceType": "shadowing"
+  },
+  {
+    "day": 14,
+    "title": "Reasons and Explanations",
+    "sentences": [
+      "I can give reasons for my opinions.",
+      "I can explain why I made a decision.",
+      "I use words like because, so, and therefore.",
+      "I try to speak in clear and complete sentences.",
+      "I know that good explanations make conversations easier."
+    ],
+    "speakingTask": "Choose three decisions in your life and explain why you made each one.",
+    "practiceType": "speaking"
+  },
+  {
+    "day": 15,
+    "title": "Opinions and Preferences",
+    "sentences": [
+      "I can share my opinions politely.",
+      "I can say what I like and what I do not like.",
+      "I respect that other people may think differently.",
+      "I use phrases like in my opinion and I believe.",
+      "I am practicing to express myself with confidence."
+    ],
+    "speakingTask": "Talk about your opinions on work, study, and free time. Explain why you think this way.",
+    "practiceType": "questions"
+  },
+  {
+    "day": 16,
+    "title": "Comparisons",
+    "sentences": [
+      "I can compare two people, places, or things.",
+      "I use words like bigger, more comfortable, or more interesting.",
+      "I can say which option I prefer and why.",
+      "I can compare my past and present English level.",
+      "I understand that comparisons make my speech richer."
+    ],
+    "speakingTask": "Compare your life now with your life five years ago. Talk about work, routine, and English.",
+    "practiceType": "shadowing"
+  },
+  {
+    "day": 17,
+    "title": "Storytelling",
+    "sentences": [
+      "I can tell a story with a beginning, middle, and end.",
+      "I use time words like first, then, and finally.",
+      "I add details to make my story interesting.",
+      "I try to speak smoothly without stopping too much.",
+      "I know that storytelling is a powerful speaking skill."
+    ],
+    "speakingTask": "Tell a short story about a meaningful day in your life. Focus on clear order and details.",
+    "practiceType": "story"
+  },
+  {
+    "day": 18,
+    "title": "Confidence Practice",
+    "sentences": [
+      "I am more confident than when I started.",
+      "I can keep speaking even when I make mistakes.",
+      "I focus on communication, not perfection.",
+      "I know that my voice and ideas are valuable.",
+      "I am building a strong speaking habit every day."
+    ],
+    "speakingTask": "Speak freely for three minutes about anything you want. Do not stop, just keep talking.",
+    "practiceType": "speaking"
+  },
+  {
+    "day": 19,
+    "title": "Review and Strengthening",
+    "sentences": [
+      "I have practiced for almost twenty days.",
+      "I can feel changes in my speaking and thinking.",
+      "I remember many sentences from the earlier days.",
+      "I can speak longer without looking at notes.",
+      "I am ready to review and strengthen my weak areas."
+    ],
+    "speakingTask": "Review the last ten days. Talk about the topics that were easiest and hardest for you.",
+    "practiceType": "shadowing"
+  },
+  {
+    "day": 20,
+    "title": "Intermediate Review",
+    "sentences": [
+      "I have practiced speaking consistently for twenty days.",
+      "I am more comfortable talking about my job and daily life.",
+      "I can share my opinions and tell short stories.",
+      "I understand that my speaking is improving step by step.",
+      "I am ready to enter the advanced stage of this plan."
+    ],
+    "speakingTask": "Give a 4 minute talk summarizing your progress so far and your goals for the last ten days.",
+    "practiceType": "questions"
+  },
+  {
+    "day": 21,
+    "title": "Goals and Vision",
+    "sentences": [
+      "I have clear goals for my English speaking.",
+      "I can describe my ideal future using English.",
+      "I can explain how English will help my dreams.",
+      "I am taking daily action toward my goals.",
+      "I see myself speaking English naturally and confidently."
+    ],
+    "speakingTask": "Describe your long term goals in life and explain how English supports each of them.",
+    "practiceType": "speaking"
+  },
+  {
+    "day": 22,
+    "title": "Skills and Strengths",
+    "sentences": [
+      "I can talk about my main skills and strengths.",
+      "I can give examples of how I use my skills.",
+      "I can explain what makes me a good colleague or friend.",
+      "I know that talking about strengths is important in interviews.",
+      "I am learning to speak about myself with confidence but without arrogance."
+    ],
+    "speakingTask": "Talk as if you are in an interview and explain your three main strengths with examples.",
+    "practiceType": "questions"
+  },
+  {
+    "day": 23,
+    "title": "Plans and Projects",
+    "sentences": [
+      "I often plan small personal projects for my life.",
+      "I can describe a project from the beginning to the end.",
+      "I can say what resources and time I will need.",
+      "I can explain possible problems and how to handle them.",
+      "I use English to think more clearly about my plans."
+    ],
+    "speakingTask": "Describe a project you want to do this year. Explain the steps, time, and result.",
+    "practiceType": "shadowing"
+  },
+  {
+    "day": 24,
+    "title": "Explaining Ideas Simply",
+    "sentences": [
+      "I can explain a difficult idea in simple English.",
+      "I avoid long and confusing sentences.",
+      "I check if my explanation is easy to understand.",
+      "I know that simple language can still be powerful.",
+      "I practice explaining ideas to an imaginary friend."
+    ],
+    "speakingTask": "Choose a topic you know well and explain it as if you are teaching a beginner.",
+    "practiceType": "story"
+  },
+  {
+    "day": 25,
+    "title": "Teaching and Guiding",
+    "sentences": [
+      "I can give clear instructions in English.",
+      "I can guide someone through a simple task.",
+      "I use step by step language like first, next, and finally.",
+      "I speak slowly and clearly when I give instructions.",
+      "I am practicing to be a calm and helpful speaker."
+    ],
+    "speakingTask": "Explain how to do something you know well, like cooking a dish or using a tool.",
+    "practiceType": "speaking"
+  },
+  {
+    "day": 26,
+    "title": "Free Speaking",
+    "sentences": [
+      "I can speak freely for several minutes.",
+      "I do not panic when I forget a word.",
+      "I can use simple words to explain my meaning.",
+      "I can move from one idea to the next smoothly.",
+      "I enjoy the feeling of expressing myself in English."
+    ],
+    "speakingTask": "Speak freely for five minutes on any topic. Keep going even if you pause or repeat.",
+    "practiceType": "questions"
+  },
+  {
+    "day": 27,
+    "title": "AI Speaking Simulation",
+    "sentences": [
+      "I can have a simple conversation with an AI partner.",
+      "I answer questions as if I am talking to a real person.",
+      "I listen to the questions carefully before I speak.",
+      "I try to give full and natural answers.",
+      "I use this safe space to experiment with new phrases."
+    ],
+    "speakingTask": "Imagine an AI tutor is asking you questions about your day, plans, and goals. Answer as naturally as possible.",
+    "practiceType": "shadowing"
+  },
+  {
+    "day": 28,
+    "title": "Interview Simulation",
+    "sentences": [
+      "I can introduce myself in a professional way.",
+      "I can answer common interview questions.",
+      "I can talk about my strengths and weaknesses honestly.",
+      "I can explain why I am a good fit for a role.",
+      "I am practicing to stay calm and confident in interviews."
+    ],
+    "speakingTask": "Simulate a job or school interview. Answer typical questions for at least five minutes.",
+    "practiceType": "speaking"
+  },
+  {
+    "day": 29,
+    "title": "Long Speaking Challenge",
+    "sentences": [
+      "I am ready to speak for a longer time.",
+      "I can organize my ideas into clear sections.",
+      "I use examples and stories to support my points.",
+      "I try to keep a natural and steady rhythm.",
+      "I know this challenge will push my speaking ability."
+    ],
+    "speakingTask": "Give a 7 minute talk about your life story, your challenges, and your dreams for the future.",
+    "practiceType": "story"
+  },
+  {
+    "day": 30,
+    "title": "Final Reflection",
+    "sentences": [
+      "I have completed the 30 day speaking journey.",
+      "I can feel a real change in my confidence.",
+      "I understand my speaking strengths and weaknesses.",
+      "I know how to continue practicing after this program.",
+      "I am proud of my effort and progress in English."
+    ],
+    "speakingTask": "Reflect on the whole 30 days. Talk about your progress, your favorite tasks, and your next steps.",
+    "practiceType": "shadowing"
+  }
+]
+
