@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeToggle } from "@/components/theme-toggle";
@@ -44,6 +45,14 @@ export default function RootLayout({
                 <h1 className="text-lg font-semibold text-slate-50">
                   Speaking Trainer
                 </h1>
+                <nav className="mt-2 flex flex-wrap gap-3 text-xs font-medium text-slate-400">
+                  <Link href="/" className="hover:text-emerald-400">
+                    Home
+                  </Link>
+                  <Link href="/vocab" className="hover:text-emerald-400">
+                    So&apos;zlar
+                  </Link>
+                </nav>
               </div>
               <ThemeToggle />
             </div>

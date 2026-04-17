@@ -81,6 +81,12 @@ export default function Home() {
             >
               View plan from day 1
             </Link>
+            <Link
+              href="/vocab"
+              className="inline-flex h-11 items-center justify-center rounded-full border border-sky-300 bg-sky-50 px-5 text-xs font-medium text-sky-900 hover:bg-sky-100 dark:border-sky-800 dark:bg-sky-950/50 dark:text-sky-200 dark:hover:bg-sky-900/60"
+            >
+              Mening so&apos;zlarim
+            </Link>
           </div>
         </div>
       </section>
